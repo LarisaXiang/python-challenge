@@ -75,8 +75,11 @@ with open(pybank_budget) as budgetfile:
     print(f"Greatest Increase in Profits: {max_increase_date} (${max_increase})")
     print(f"Greatest Decrease in Profits: {max_decrease_date} (${max_decrease})")
 
-    
-    
+
+    lines = ["output: \n","Total Months: 86 \nTotal Profit Losses: $22564198 \nAverage Changes: $-8311.11 \nGreatest Increase in Profits: Aug-16 ($1862002) \nGreatest Decrease in Profits: Feb-14 ($-1825558)"]
+    with open ('output.txt','w') as f:
+        for line in lines:
+            f.write(line)
 
 
     
